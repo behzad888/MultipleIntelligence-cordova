@@ -22,7 +22,7 @@ class Questions {
 		var that = this;
 		$timeout(function () {
 			that.anims = true;
-		}, 10)
+		}, 10);
 	}
 
 	increase() {
