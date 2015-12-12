@@ -128,6 +128,7 @@
       "awesome-bootstrap-checkbox": "npm:awesome-bootstrap-checkbox@0.3.6",
       "bootstrap-css-only": "github:fyockm/bootstrap-css-only@3.3.5",
       "cgwyllie/angular-velocity": "github:cgwyllie/angular-velocity@^0.3.2",
+      "clean-css": "npm:clean-css@^3.4.8",
       "css": "github:systemjs/plugin-css@0.1.16",
       "font-awesome": "npm:font-awesome@4.4.0",
       "fullcalendar": "npm:fullcalendar@2.5.0",

@@ -26,15 +26,10 @@ class Questions {
 	}
 
 	increase() {
-		if (this.counter < 80) {
-			this.counter++;
-		}
-
+		if (this.counter < 80) { this.counter++; }
 	}
 	decrease() {
-		if (this.counter >= 1) {
-			this.counter--;
-		}
+		if (this.counter >= 1) { this.counter--; }
 	}
 }
 

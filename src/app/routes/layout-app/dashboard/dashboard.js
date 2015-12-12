@@ -27,14 +27,14 @@ class Dashboard {
 		this.$timeout = $timeout;
 		$timeout(function () {
 			that.anims = true;
-		}, 10)
+		}, 10);
 	}
 	goStart() {
 		this.anims = false;
 		var that = this;
-		this.$timeout(function () {		
+		this.$timeout(function () {
 			that.$location.path('start');
-		}, 300)
+		}, 300);
 	}
 }
 
