@@ -1,13 +1,13 @@
 {
-  "name": "employee-scheduling-ui",
+  "name": "multiple-intelligence",
   "version": "0.0.0",
-  "description": "An UI component for Employee Scheduling application that makes employee scheduling management easy, fast and mobile.",
+  "description": "",
   "private": true,
   "author": {
-    "name": "Martin Micunda",
-    "url": "http://martinmicunda.com"
+    "name": "Behzad abbasi",
+    "url": "http://dasin.ir"
   },
-  "homepage": "http://martinmicunda.github.io/employee-scheduling-ui/dist",
+  "homepage": "",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
@@ -32,16 +32,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/martinmicunda/employee-scheduling-ui"
+    "url": "https://github.com/behzad888/multipleintelligence"
   },
   "bugs": {
-    "url": "https://github.com/martinmicunda/employee-scheduling-ui/issues"
+    "url": "https://github.com/behzad888/multipleintelligence/issues"
   },
   "keywords": [
-    "employee scheduling",
+    "multiple intelligence",
     "mm",
     "es6",
-    "scheduler"
+    "intelligence"
   ],
   "devDependencies": {
     "del": "2.0.2",
