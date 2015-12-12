@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Employee Scheduling UI
 ======================
 
@@ -206,3 +207,6 @@ TODO
     Copyright (c) 2014-2015 Martin Micunda  
 
     Source code is open source and released under the GNU GPL v3 license.
+=======
+# MultipleIntelligence-cordova
+>>>>>>> 9183505641b6811b236b89f24b680d0c797ba108
