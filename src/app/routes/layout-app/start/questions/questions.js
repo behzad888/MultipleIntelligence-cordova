@@ -2,6 +2,7 @@
 import Data from './data';
 import template from './questions.html!text';
 import {View, Component, Inject} from '../../../../ng-decorators';  // jshint unused: false
+import $ from 'jquery';
 //start-non-standard
 @Component({
     selector: 'questions'
