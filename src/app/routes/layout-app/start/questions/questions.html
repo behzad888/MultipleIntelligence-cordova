@@ -1,16 +1,79 @@
-<div class="box-one" ng-show="vm.anims">
-    <md-card>
-        <!--<img src="card-image.png" class="md-card-image" alt="image caption">-->
-        <md-card-content>
-            <h2 style="text-align:center"></h2>
-            <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+<md-card id="questionId">
+    <!--<img src="card-image.png" class="md-card-image" alt="image caption">-->
+    <md-card-content>
+        <h2 style="text-align:center"></h2>
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
      layout-align-center-center layout-row">
-               <p>{{vm.currentQ.question}}</p>
+            <p>{{vm.currentQ.question}}</p>
 
-            </section>
-        </md-card-content>
-        <md-card-footer>
-            {{vm.counter}} / 80
-        </md-card-footer>
-    </md-card>
-</div>
+        </section>
+    </md-card-content>
+    <md-card-footer>
+        {{vm.counter}} / 80
+    </md-card-footer>
+</md-card>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+     layout-align-center-center layout-row">
+    <div class="container">
+        <div class="col-xs-12 col-md-2 col-lg-2">
+            <md-card id="first-answer">
+                <md-menu-item>
+                    <md-button ng-click="ctrl.sampleAction('share', $event)">
+                        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+     layout-align-center-center layout-row">
+                            به هیچ وجه شبیه من نیست
+                        </section>
+                    </md-button>
+                </md-menu-item>
+            </md-card>
+        </div>
+        <div class="col-xs-12  col-md-2 col-lg-2">
+            <md-card id="second-answer">
+                <md-menu-item>
+                    <md-button ng-click="ctrl.sampleAction('share', $event)">
+                        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+     layout-align-center-center layout-row">
+                            اندکی شبیه من است
+                        </section>
+                    </md-button>
+                </md-menu-item>
+            </md-card>
+        </div>
+        <div class="col-xs-12  col-md-2 col-lg-3">
+            <md-card id="thith-answer">
+                <md-menu-item>
+                    <md-button ng-click="ctrl.sampleAction('share', $event)">
+                        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+     layout-align-center-center layout-row">
+                            در حد متوسط شبیه من است
+                        </section>
+                    </md-button>
+                </md-menu-item>
+            </md-card>
+        </div>
+        <div class="col-xs-12  col-md-2 col-lg-2">
+            <md-card id="fourth-answer">
+                <md-menu-item>
+                    <md-button ng-click="ctrl.sampleAction('share', $event)">
+                        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+     layout-align-center-center layout-row">
+                            تا حد زیادی شبیه من است
+                        </section>
+                    </md-button>
+                </md-menu-item>
+            </md-card>
+        </div>
+        <div class="col-xs-12  col-md-2 col-lg-2">
+            <md-card id="fifth-answer">
+                <md-menu-item>
+                    <md-button ng-click="ctrl.sampleAction('share', $event)">
+                        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-xs-column layout-xl-column layout-sm-column layout-md-column layout-gt-lg-column layout-lg-column
+     layout-align-center-center layout-row">
+                            کاملا شبیه من است
+                        </section>
+                    </md-button>
+                </md-menu-item>
+            </md-card>
+        </div>
+    </div>
+</section>

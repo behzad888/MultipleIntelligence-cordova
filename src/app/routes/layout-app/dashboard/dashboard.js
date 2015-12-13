@@ -16,25 +16,18 @@ import {RouteConfig, View, Component, Inject} from '../../../ng-decorators';  //
 @View({
     template: template
 })
-@Inject('$location', '$timeout')
+@Inject('$location')
 //end-non-standard
 class Dashboard {
-	constructor($location, $timeout) {
+	constructor($location) {
+		$('#md-card').addClass('animated bounceIn');
 		this.anims = false;
 		this.hello = 'test';
 		this.$location = $location;
-		var that = this;
-		this.$timeout = $timeout;
-		$timeout(function () {
-			that.anims = true;
-		}, 10);
 	}
 	goStart() {
-		this.anims = false;
-		var that = this;
-		this.$timeout(function () {
-			that.$location.path('start');
-		}, 300);
+		$('#md-card').addClass('animated bounceOutDown');
+		this.$location.path('start');
 	}
 }
 
