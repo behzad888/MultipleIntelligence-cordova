@@ -1,3 +1,22 @@
+@font-face {
+  font-family: behzad;
+  src: url('/src/fonts/behzad.eot'); 
+  src: url('/src/fonts/behzad.eot?#iefix') format('embedded-opentype'), 
+       url('/src/fonts/behzad.woff') format('woff'), 
+  url('/src/fonts/behzad.woff2') format('woff2'), 
+       url('/src/fonts/behzad.ttf')  format('truetype'), 
+       url('/src/fonts/behzad.svg#svgFontName') format('svg'); 
+}
+body{
+	font-family: 'behzad';
+	font-size: 14px;
+}
+md-menu-item{
+	height: 55px;
+}
+md-menu-item > .md-button{
+	font-size: 14px;
+}
 .container .col-xs-12 section > .md-button{
 	width: 100%;
 }
@@ -14,26 +33,26 @@
 	}
 }
 #questionId{
-	background: $bg-question;
+	background: $white;
 }
 #first-answer{
-	background: $one;
+	background: $white;
 }
 
 #second-answer{
-	background: $two;
+	background: $white;
 }
 
 #thith-answer{
-	background: $three;
+	background: $white;
 }
 
 #fourth-answer{
-	background: $four;
+	background: $white;
 }
 
 #fifth-answer{
-	background: $five;
+	background: $white;
 }
 
 

@@ -9,11 +9,30 @@ import {View, Component, Inject} from '../../../../ng-decorators';  // jshint un
 @View({
     template: template
 })
-@Inject('$location', '$http')
+@Inject('$location', '$http', '$timeout')
 //end-non-standard
 class Questions {
-	constructor($location, $http) {
-		$('#questionId').addClass('animated bounceInUp');
+	constructor($location, $http, $timeout) {
+		this.$timeout = $timeout;
+		$('#questionId').addClass('animated bounceInUp')
+		$timeout(function () {
+			$('#first-answer').addClass('animated bounceInUp');
+		}, 50);
+		$timeout(function () {
+			$('#second-answer').addClass('animated bounceInUp');
+		}, 70);
+		$timeout(function () {
+			$('#threeth-answer').addClass('animated bounceInUp');
+		}, 90);
+		$timeout(function () {
+			$('#fourth-answer').addClass('animated bounceInUp');
+		}, 110);
+		$timeout(function () {
+			$('#fifth-answer').addClass('animated bounceInUp');
+		}, 130);
+
+
+
 		this.counter = 1;
 		this.$location = $location;
 		this.data = new Data().data;
