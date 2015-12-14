@@ -1,7 +1,74 @@
+@font-face {
+  font-family: behzad;
+  src: url('/src/fonts/behzad.eot'); 
+  src: url('/src/fonts/behzad.eot?#iefix') format('embedded-opentype'), 
+       url('/src/fonts/behzad.woff') format('woff'), 
+  url('/src/fonts/behzad.woff2') format('woff2'), 
+       url('/src/fonts/behzad.ttf')  format('truetype'), 
+       url('/src/fonts/behzad.svg#svgFontName') format('svg'); 
+}
+body{
+	font-family: 'behzad';
+	font-size: 14px;
+}
+md-menu-item{
+	height: 55px;
+}
+md-menu-item > .md-button{
+	font-size: 14px;
+}
+.container .col-xs-12 section > .md-button{
+	width: 100%;
+}
+
+@media (min-width: 1200px){
+	.col-lg-2 {
+    	width: 18.666667%;
+	}
+}
+
+@media (min-width: 992px){
+	.col-md-2 {
+    	width: 19.666667%;
+	}
+}
+#questionId{
+	background: $bg-question;
+}
+#first-answer{
+	background: $one;
+}
+
+#second-answer{
+	background: $two;
+}
+
+#threeth-answer{
+	background: $three;
+}
+
+#fourth-answer{
+	background: $four;
+}
+
+#fifth-answer{
+	background: $five;
+}
+
+
+md-content{
+	text-align: center;
+}
 section.layout-wrap p{
     text-align: right;
 }
-
+md-card{
+	margin:0.3em !important;
+}
+md-card md-card-content{
+	padding-top: 5px;
+    padding-bottom: 5px; 
+}
 #md-card{
 	height: 90vh !important;
 	margin-top: 1em;

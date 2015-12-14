@@ -2,6 +2,7 @@
 import Data from './data';
 import template from './questions.html!text';
 import {View, Component, Inject} from '../../../../ng-decorators';  // jshint unused: false
+import $ from 'jquery';
 //start-non-standard
 @Component({
     selector: 'questions'
@@ -13,16 +14,30 @@ import {View, Component, Inject} from '../../../../ng-decorators';  // jshint un
 //end-non-standard
 class Questions {
 	constructor($location, $http, $timeout) {
-		this.anims = false;
+		this.$timeout = $timeout;
+		$('#questionId').addClass('animated bounceInUp')
+		$timeout(function () {
+			$('#first-answer').addClass('animated bounceInUp');
+		}, 50);
+		$timeout(function () {
+			$('#second-answer').addClass('animated bounceInUp');
+		}, 70);
+		$timeout(function () {
+			$('#threeth-answer').addClass('animated bounceInUp');
+		}, 90);
+		$timeout(function () {
+			$('#fourth-answer').addClass('animated bounceInUp');
+		}, 110);
+		$timeout(function () {
+			$('#fifth-answer').addClass('animated bounceInUp');
+		}, 130);
+
+
+
 		this.counter = 1;
 		this.$location = $location;
 		this.data = new Data().data;
 		this.currentQ = this.data.data[this.counter - 1];
-		this.$timeout = $timeout;
-		var that = this;
-		$timeout(function () {
-			that.anims = true;
-		}, 10);
 	}
 
 	increase() {

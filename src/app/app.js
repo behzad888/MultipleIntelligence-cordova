@@ -7,6 +7,7 @@ import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-ui/ui-bootstrap-tpls';
 import 'angular-material';
+import 'jquery';
 // import 'velocity';
 // import 'angular-velocity';
 // css vendor files
