@@ -15,23 +15,29 @@ import $ from 'jquery';
 class Questions {
 	constructor($location, $http, $timeout) {
 		this.$timeout = $timeout;
-		$('#questionId').addClass('animated bounceInUp')
+		this.hideItems = true;
+		$('#questionId').addClass('animated bounceInUp');
 		$timeout(function () {
 			$('#first-answer').addClass('animated bounceInUp');
-		}, 50);
+			$('#first-answer').css('display','block')
+		}, 10);
 		$timeout(function () {
 			$('#second-answer').addClass('animated bounceInUp');
-		}, 70);
+			$('#second-answer').css('display','block')
+		}, 20);
 		$timeout(function () {
 			$('#threeth-answer').addClass('animated bounceInUp');
-		}, 90);
+			$('#threeth-answer').css('display','block')
+		}, 30);
 		$timeout(function () {
 			$('#fourth-answer').addClass('animated bounceInUp');
-		}, 110);
+			$('#fourth-answer').css('display','block')
+		}, 40);
 		$timeout(function () {
 			$('#fifth-answer').addClass('animated bounceInUp');
-		}, 130);
-
+			$('#fifth-answer').css('display','block')
+		}, 50);
+		
 
 
 		this.counter = 1;
