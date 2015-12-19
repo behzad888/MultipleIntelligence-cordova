@@ -1,3 +1,15 @@
+.progress-bar-info-first{
+	background-color: $five;
+}
+.progress-bar-info-two{
+	background-color: $five1;
+}
+.progress-bar-info-three{
+	background-color: $five2;
+}
+.progress-bar-info-four{
+	background-color: $five3;
+}
 @font-face {
   font-family: behzad;
   src: url('/src/fonts/behzad.eot'); 
@@ -32,27 +44,96 @@ md-menu-item > .md-button{
     	width: 19.666667%;
 	}
 }
-#questionId{
-	background: $bg-question;
+.questionId-first{
+	background: $bg-question-first;
 }
-#first-answer{
+.questionId-second{
+	background: $bg-question-second;
+}
+.questionId-thirth{
+	background: $bg-question-thirth;
+}
+.questionId-fourth{
+	background: $bg-question-fourth;
+}
+.first-answer-0{
 	background: $one;
 }
 
-#second-answer{
+.second-answer-0{
 	background: $two;
 }
 
-#threeth-answer{
+.threeth-answer-0{
 	background: $three;
 }
 
-#fourth-answer{
+.fourth-answer-0{
 	background: $four;
 }
 
-#fifth-answer{
+.fifth-answer-0{
 	background: $five;
+}
+
+.first-answer-1{
+	background: $one1;
+}
+
+.second-answer-1{
+	background: $two1;
+}
+
+.threeth-answer-1{
+	background: $three1;
+}
+
+.fourth-answer-1{
+	background: $four1;
+}
+
+.fifth-answer-1{
+	background: $five1;
+}
+
+.first-answer-2{
+	background: $one2;
+}
+
+.second-answer-2{
+	background: $two2;
+}
+
+.threeth-answer-2{
+	background: $three2;
+}
+
+.fourth-answer-2{
+	background: $four2;
+}
+
+.fifth-answer-2{
+	background: $five2;
+}
+
+.first-answer-3{
+	background: $one3;
+}
+
+.second-answer-3{
+	background: $two3;
+}
+
+.threeth-answer-3{
+	background: $three3;
+}
+
+.fourth-answer-3{
+	background: $four3;
+}
+
+.fifth-answer-3{
+	background: $five3;
 }
 
 

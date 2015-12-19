@@ -1,21 +1,22 @@
 'use strict';
-import './questions/questions';
-import template from './start.html!text';
+import './viewresult/viewresult';
+import template from './result.html!text';
 import {RouteConfig, Component, View} from '../../../ng-decorators';  // jshint unused: false
 
 //start-non-standard
-@RouteConfig('app.start', {
-    url: '/start',
-    template: '<start></start>',
+@RouteConfig('app.result', {
+    url: '/result',
+    template: '<result></result>',
     data: {
-        
+
     }
 })
 @Component({
-    selector: 'start'
+    selector: 'result'
 })
 @View({
     template: template
 })
 //end-non-standard
-class Start {}
+class Result {
+}

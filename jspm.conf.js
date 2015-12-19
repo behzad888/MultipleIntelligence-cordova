@@ -38,7 +38,7 @@ System.config({
     "angular-material": "github:angular/bower-material@0.11.4",
     "angular-messages": "npm:angular-messages@1.4.5",
     "angular-mocks": "npm:angular-mocks@1.4.5",
-    "angular-sanitize": "npm:angular-sanitize@1.4.8",
+    "angular-sanitize": "npm:angular-sanitize@1.4.5",
     "angular-ui": "github:angular-ui/bootstrap-bower@0.13.4",
     "angular-ui-calendar": "npm:angular-ui-calendar@1.0.2",
     "angular-ui-router": "npm:angular-ui-router@0.2.15",
