@@ -10,32 +10,24 @@ import $ from 'jquery';
 @View({
     template: template
 })
-@Inject('$location', '$http', '$timeout')
+@Inject('$location', '$http', '$timeout', 'ResultService')
 //end-non-standard
 class Questions {
-	constructor($location, $http, $timeout) {
+	constructor($location, $http, $timeout, ResultService) {
 		this.$timeout = $timeout;
 		this.hideItems = true;
 		$('#questionId').addClass('animated bounceInUp questionId-first');
 		this.animation($timeout, 'bounceInUp');
-		this.counter = 78;
+		this.counter = 1;
 		this.$location = $location;
 		this.data = new Data().data;
 		this.dataType = new Data().type;
 		this.changeQuestion();
 		this.progressbarclass = 'progress-bar-info-first';
-		this.counterQ = this.counter;
+		this.counterQ = this.counter * 1.25;
 		this.changeAnswerColor(0);
 		this.lastAnimation = 'bounceInUp';
-
-		this.type1 = 0;
-		this.type2 = 0;
-		this.type3 = 0;
-		this.type4 = 0;
-		this.type5 = 0;
-		this.type6 = 0;
-		this.type7 = 0;
-		this.type8 = 0;
+		this.ResultService = ResultService;
 	}
 	removeAnimation(animate) {
 		$('#first-answer').removeClass('animated ' + animate);
@@ -77,33 +69,27 @@ class Questions {
 	}
 
 	increase(answer) {
-		if (this.counter < 80) {
-			this.counter++;
-			this.changeQuestion();
-			this.increaseCunterProgress();
-			this.changeProgressColor();
-			this.calcAnswer(answer);
-		}else{
-			this.$location.path('result');
-		}
+		var that = this;
+		this.animation(this.$timeout, 'fadeOutDown');
+		this.$timeout(function () {
+			that.removeAnimation('fadeOutDown');
+			if (that.counter < 80) {
+				that.counter++;
+				that.changeQuestion();
+				that.increaseCunterProgress();
+				that.changeProgressColor();
+				that.calcAnswer(answer);
+			} else {
+				that.counter++;
+				that.calcAnswer(answer);
+				that.$location.path('result');
+			}
+		}, 200);
+
 	}
 
 	increaseCunterProgress() {
-		this.counterQ++;
-		switch (this.counterQ) {
-			case 20:
-				this.counterQ += 5;
-				break;
-			case 40:
-				this.counterQ += 5;
-				break;
-			case 60:
-				this.counterQ += 5;
-				break;
-			case 80:
-				this.counterQ += 5;
-				break;
-		}
+		this.counterQ += 1.25;
 	}
 
 	changeAnswerColor(level) {
@@ -153,32 +139,7 @@ class Questions {
 			}, this);
 
 		}, this);
-		switch (number) {
-			case 1:
-				this.type1 += answer;
-				break;
-			case 2:
-				this.type2 += answer;
-				break;
-			case 3:
-				this.type3 += answer;
-				break;
-			case 4:
-				this.type4 += answer;
-				break;
-			case 5:
-				this.type5 += answer;
-				break;
-			case 6:
-				this.type6 += answer;
-				break;
-			case 7:
-				this.type7 += answer;
-				break;
-			case 8:
-				this.type8 += answer;
-				break;
-		}
+		this.ResultService.increase(number, answer);
 	}
 
 	changeQuestionColor(level) {

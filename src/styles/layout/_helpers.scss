@@ -1,3 +1,42 @@
+.progress-bar-info-1{
+    background-color:$result-one;
+}
+.progress-bar-info-2{
+    background-color:$result-two;
+}
+.progress-bar-info-3{
+    background-color:$result-three;
+}
+.progress-bar-info-4{
+    background-color:$result-four;
+}
+.progress-bar-info-5{
+    background-color:$result-five;
+}
+.progress-bar-info-6{
+    background-color:$result-six;
+}
+.progress-bar-info-7{
+    background-color:$result-seven;
+}
+.progress-bar-info-8{
+    background-color:$result-eight;
+}
+
+.ngdialog.ngdialog-theme-default .ngdialog-content{
+    font-family: 'behzad' !important;
+    font-size: 14px !important;
+    width: 90% !important;
+}
+.ngdialog.ngdialog-theme-default{
+    padding-top: 10% !important;
+}
+.md-toolbar.md-warn > md-tabs.md-default-theme, md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-active, md-toolbar.md-warn > md-tabs.md-default-theme, md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]).md-focused{
+    color: $one;
+}
+.md-toolbar.md-warn > md-tabs.md-default-theme, md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]){
+ color: $one1;
+}
 .progress-bar-info-first{
 	background-color: $five;
 }
@@ -12,12 +51,12 @@
 }
 @font-face {
   font-family: behzad;
-  src: url('/src/fonts/behzad.eot'); 
-  src: url('/src/fonts/behzad.eot?#iefix') format('embedded-opentype'), 
-       url('/src/fonts/behzad.woff') format('woff'), 
-  url('/src/fonts/behzad.woff2') format('woff2'), 
-       url('/src/fonts/behzad.ttf')  format('truetype'), 
-       url('/src/fonts/behzad.svg#svgFontName') format('svg'); 
+  src: url('/src/fonts/behzad.eot');
+  src: url('/src/fonts/behzad.eot?#iefix') format('embedded-opentype'),
+       url('/src/fonts/behzad.woff') format('woff'),
+  url('/src/fonts/behzad.woff2') format('woff2'),
+       url('/src/fonts/behzad.ttf')  format('truetype'),
+       url('/src/fonts/behzad.svg#svgFontName') format('svg');
 }
 body{
 	font-family: 'behzad';
@@ -148,7 +187,7 @@ md-card{
 }
 md-card md-card-content{
 	padding-top: 5px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
 }
 #md-card{
 	height: 90vh !important;

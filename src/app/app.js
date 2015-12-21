@@ -7,6 +7,7 @@ import 'angular-sanitize';
 import 'angular-ui-router';
 import 'angular-ui/ui-bootstrap-tpls';
 import 'angular-material';
+import 'ng-dialog';
 import 'jquery';
 // import 'velocity';
 // import 'angular-velocity';
@@ -18,8 +19,8 @@ import 'jquery';
 
 import './routes/routes';
 import mainModule from './ng-decorators';
-
-angular.element(document).ready(function() {
+import './services/services';
+angular.element(document).ready(function () {
     angular.bootstrap(document, [mainModule.name], {
         strictDi: true
     });

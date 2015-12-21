@@ -15,7 +15,8 @@ const app = angular.module('ngDecorator', [
     // 3rd party modules
     'ui.router',
     'ui.bootstrap',
-    'ngMaterial'
+    'ngMaterial',
+    'ngDialog'
 ]);
 
 function Run() {

@@ -51,7 +51,7 @@ System.config({
     "clean-css": "npm:clean-css@3.4.8",
     "core-js": "npm:core-js@1.1.4",
     "css": "github:systemjs/plugin-css@0.1.16",
-    "daneden/animate.css": "github:daneden/animate.css@3.4.0",
+    "daneden/animate.css": "github:daneden/animate.css@3.5.0",
     "font-awesome": "npm:font-awesome@4.4.0",
     "fullcalendar": "npm:fullcalendar@2.5.0",
     "fullcalendar-scheduler": "npm:fullcalendar-scheduler@1.1.0",
@@ -59,6 +59,7 @@ System.config({
     "json": "github:systemjs/plugin-json@0.1.0",
     "moment": "npm:moment@2.10.6",
     "ng-bs-animated-button": "github:jeremypeters/ng-bs-animated-button@2.0.3",
+    "ng-dialog": "npm:ng-dialog@0.5.6",
     "ng-file-upload": "npm:ng-file-upload@7.2.0",
     "si-table": "github:simplicitylabs/si-table@0.2.3",
     "text": "github:systemjs/plugin-text@0.0.2",
@@ -199,6 +200,10 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:moment@2.10.6": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:ng-dialog@0.5.6": {
+      "http": "github:jspm/nodelibs-http@1.7.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:ng-file-upload@7.2.0": {
