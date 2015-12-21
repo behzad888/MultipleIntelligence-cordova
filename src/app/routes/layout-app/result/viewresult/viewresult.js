@@ -1,5 +1,6 @@
 'use strict';
 import Data from './data';
+import $ from 'jquery';
 import angular from 'angular';
 import template from './viewresult.html!text';
 import {View, Component, Inject} from '../../../../ng-decorators';  // jshint unused: false
@@ -10,15 +11,17 @@ import {View, Component, Inject} from '../../../../ng-decorators';  // jshint un
 @View({
     template: template
 })
-@Inject('ResultService', 'ngDialog')
+@Inject('ResultService', 'ngDialog','$location')
 //end-non-standard
 class ViewResult {
-    constructor(ResultService, ngDialog) {
+    constructor(ResultService, ngDialog,$location) {
         this.ResultService = ResultService;
         this.data = new Data().data;
         this.arrayTypes = [];
         this.pushToArray();
         this.ngDialog = ngDialog;
+        this.$location = $location;
+        $('#resultId').addClass('animated bounceInUp');
     }
     pushToArray() {
         this.arrayTypes.push({ 'type': '1', 'value': this.ResultService.type1, progressbarclass:'progress-bar-info'});
@@ -39,7 +42,7 @@ class ViewResult {
                 return -1;
             }
             return 0;
-        }
+        };
     }
 
     sort() {
@@ -48,7 +51,7 @@ class ViewResult {
 
     showDesc(title, content) {
         this.ngDialog.open({ template: '<h4 dir="rtl">' + title + '</h4><hr />'+
-        '<p dir="rtl">'+content+'</p>', plain: true })
+        '<p dir="rtl">'+content+'</p>', plain: true });
     }
 
     showAdvantage(title, content) {
@@ -56,12 +59,13 @@ class ViewResult {
         angular.forEach(content,function(data){
             temp += '<li>' + data + '</li>';           
         });
-        temp += '</ul>'
-        this.ngDialog.open({ template: temp, plain: true })
+        temp += '</ul>';
+        this.ngDialog.open({ template: temp, plain: true });
     }
 
     again() {
-
+        this.ResultService.clear();
+        this.$location.path('home');
     }
 }
 export default ViewResult;
